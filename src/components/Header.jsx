@@ -1,38 +1,15 @@
 import { Link } from "react-router-dom";
+import MainLinks from "./MainLinks";
 
 const Header = () => {
-   const allLinks = [
-    {path: "/", name: "anasayfa"},
-    {path: "/classic-periot", name: "klasik dönem"},
-    {path: "/cultural-social-life", name: "kültürel & sosyal Hayat"},
-    {path: "/distribution-periot", name: "dağılma dönemi"},
-    {path: "/foundation-periot", name: "kuruluş dönemi"},
-    {path: "/important-figures", name: "önemli figürler"},
-    {path: "/increase-periot", name: "yükseliş dönemi"},
-    {path: "/ottoman-heritace", name: "osmanlı mirası"},
-    {path: "/stand-decline-periot", name: "duraklama & gerileme dönemi"}
-   ];
-
-   const li = allLinks.map((link, id) => {
-      return(
-         <>
-            <li key={id}>
-               <Link to={link.path}> {link.name} </Link>
-            </li>
-         </>
-      )
-   });
-   return(
-    <>
-       <div className="w-full p-2 grid grid-cols-2 place-content-between">
-           <img src="" alt="logo" />
-
-           <ul className="flex p-1 gap-[10px]">
-              {li}
-           </ul>
-       </div>
-    </>
-   )
-}
+  return (
+    <div className="w-full flex items-center justify-around bg-slate-500">
+      <Link to="/">
+        <img src="/public/img/logo.png" alt="" className="w-[120px] h-[120px]"/>
+      </Link>
+      <MainLinks/>
+    </div>
+  );
+};
 
 export default Header;
