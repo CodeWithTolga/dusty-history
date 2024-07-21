@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.box-hover-effect
+{
+    @apply relative before:absolute before:left-0 before:top-[50%] before:translate-y-[-50%] before:w-[2px] before:h-[18px] before:bg-[#757aff] before:rounded-md w-full flex items-center justify-start rounded-md pl-2 p-1 text-[14px] text-[#f1f3f3] duration-300 group-hover/item:before:bg-[#fff5e6] group-hover/item:pl-4 before:duration-300;
+}
+
+
+.box-underline-hover-effect 
+{
+    @apply before:absolute before:w-full before:h-[2px] before:left-0 before:bottom-0 before:rounded-md before:bg-[#ffa94c] before:scale-x-0 before:duration-300 before:hover:scale-x-[1]
+}
+
+.footer-hover-button-effect 
+{
+    /* @apply relative z-10 before:absolute before:left-0 before:right-0 before:rounded-[20px] before:size-full before:-z-[1] before:bg-[#974f1b] px-3 shadow-[0px_1px_6px_3px_rgb(56,30,28,0.5)] hover:shadow-[0px_0px_0px_0px_rgb(56,30,28,0.5)] hover:scale-[0.99] rounded-[20px] duration-200 */
+    @apply relative px-2 py-[2px] z-10 rounded-md after:absolute after:left-0 after:top-[22%] after:w-[2px] after:h-[50%] after:bg-[#757aff] after:duration-200 hover:after:top-[50%] hover:after:h-0 duration-200 hover:text-[#b4b6ff] before:absolute before:left-[50%] before:translate-x-[-50%] before:bottom-0 before:w-[8px] before:h-[2px] before:bg-[#f1f3f3] before:rounded-full before:duration-300 before:scale-x-[0] hover:before:scale-x-[1];
+}
+
+.social-media-button-effect 
+{
+    @apply rounded-md hover:rounded-[20px] duration-500 text-[15px] flex items-center justify-center gap-2;
+}

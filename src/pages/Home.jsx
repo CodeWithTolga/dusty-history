@@ -1,10 +1,12 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Home = () => {
     return(
      <>
         <Header/>
-        <div className="p-4 bg-[#9ea1ff]">Anasayfa</div>
+        <section className="p-4 bg-[#9ea1ff] h-[78vh]">Anasayfa</section>
+        <Footer/>
      </>
     )
  }

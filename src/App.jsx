@@ -48,7 +48,6 @@ const App = () => {
         {/* Atatürk Devrimi adı altından gelen linkler */}
         <Route path="/republic/ataturk-life" element={<Ataturk/>}/>
         <Route path="/republic/foreign-policy" element={<ForeignPolicy/>}/>
-        <Route path="/republic/foreign-policy" element={<ForeignPolicy/>}/>
         <Route path="/republic/important-figures" element={<ImportantFigures/>}/>
         <Route path="/republic/legacy-and-death" element={<LegacyAndDeath/>}/>
         <Route path="/republic/modern-turkey" element={<ModernTurkey/>}/>
